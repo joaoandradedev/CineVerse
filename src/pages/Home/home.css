@@ -52,17 +52,22 @@ article{
 }
 
 @media (max-width: 968px) {
+
+  article{
+    width: 60%;
+  }
+
   .titleHome{
     font-size: 20px;
   }
 
-  img {
+  .imgHome {
     width: 100%;
     max-width: 10000px;
   }
 }
 
-img {
+.imgHome {
   width: 100%;
   max-width: 400px;
   height: auto;
@@ -73,7 +78,7 @@ img {
   transition: transform 0.3s ease;
 }
 
-img:hover {
+.imgHome:hover {
   transform: scale(1.02);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }

@@ -80,7 +80,7 @@ function Filme(){
 
   return(
     <div className="filme-container">
-      <div className="filme-info">
+      <div className="filmeInfo">
         <div className="filme-poster">
           <img src={`https://image.tmdb.org/t/p/w500${filme.poster_path}`} alt={filme.title} />
         </div>

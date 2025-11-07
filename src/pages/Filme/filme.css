@@ -3,17 +3,15 @@
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 80px);
-  height: calc(100vh - 80px);
   padding: 40px 20px;
   background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
 }
 
-.filme-info {
+.filmeInfo {
   display: flex;
   gap: 40px;
   max-width: 1200px;
   width: 100%;
-  max-height: calc(100vh - 160px);
   background-color: rgba(30, 41, 59, 0.8);
   border-radius: 16px;
   padding: 40px;
@@ -40,12 +38,6 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  overflow-y: auto;
-  overflow-x: visible;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  margin: -10px;
-  padding: 10px;
 }
 
 .filme-detalhes::-webkit-scrollbar {
@@ -130,10 +122,9 @@
 
 /* Responsivo */
 @media (max-width: 968px) {
-  .filme-info {
+  .filmeInfo {
     flex-direction: column;
     align-items: center;
-    overflow-y: auto;
   }
   
   .filme-poster img {
@@ -142,9 +133,11 @@
   }
   
   .filme-detalhes {
+    height: auto;
     margin-top: 10px;
     text-align: center;
     align-items: center;
+    overflow-y: visible;
   }
 }
 
