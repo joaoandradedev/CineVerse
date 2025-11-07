@@ -1,0 +1,107 @@
+.lista-filmes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: 600;
+  color: #10B981;
+  text-align: center;
+  animation: pulse 1.5s ease-in-out infinite;
+  letter-spacing: 0.5px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+article{
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1E293B;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.titleHome{
+  font-size: 32px;
+  font-weight: bold;
+  color: #F1F5F9;
+  margin-bottom: 8px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 968px) {
+  .titleHome{
+    font-size: 20px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 10000px;
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  margin: 20px auto 24px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.acessar {
+  display: inline-block;
+  padding: 12px 32px;
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  color: #F1F5F9;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.acessar:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+}
+
+.acessar:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(16, 185, 129, 0.3);
+}
