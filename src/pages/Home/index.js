@@ -19,7 +19,7 @@ function Home(){
         }
       })
 
-      setFilmes(response.data.results.slice(0, 10).filter(filme => filme.id !== 1519168))
+      setFilmes(response.data.results.filter(filme => filme.id !== 1519168))
       setLoading(false);
 
     }

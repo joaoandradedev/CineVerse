@@ -24,7 +24,6 @@ function Filme(){
         setFilme(response.data);
         setLoading(false);
         
-        // Verifica se o filme já está nos favoritos
         const minhaLista = localStorage.getItem("@primeflix");
         let filmesSalvos = JSON.parse(minhaLista) || [];
         const hasFilme = filmesSalvos.some((filmeSalvo) => filmeSalvo.id === response.data.id);
@@ -54,7 +53,6 @@ function Filme(){
     const hasFilme = filmesSalvos.some((filmeSalvo) => filmeSalvo.id === filme.id);
   
     if(hasFilme){
-      // Remove o filme da lista
       let filtroFilmes = filmesSalvos.filter((filmeSalvo) => {
         return filmeSalvo.id !== filme.id;
       });
@@ -64,7 +62,6 @@ function Filme(){
       return;
     }
 
-    // Adiciona o filme na lista
     filmesSalvos.push(filme);
     localStorage.setItem("@primeflix", JSON.stringify(filmesSalvos));
     setFavorito(true);

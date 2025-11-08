@@ -62,9 +62,8 @@
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
-  width: calc(33.333% - 22px);
-  min-width: 300px;
-  max-width: 380px;
+  width: 360px;
+  flex-shrink: 0;
 }
 
 .card-favorito:hover {
@@ -150,7 +149,6 @@
   box-shadow: 0 6px 16px rgba(239, 68, 68, 0.4);
 }
 
-/* Responsivo */
 @media (max-width: 1200px) {
   .card-favorito {
     width: calc(50% - 16px);
@@ -164,7 +162,6 @@
 
   .card-favorito {
     width: 100%;
-    min-width: 280px;
   }
   
   .card-favorito img {
