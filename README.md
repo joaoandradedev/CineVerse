@@ -6,6 +6,9 @@ Aplicação web de catálogo de filmes desenvolvida com React, consumindo a API 
 
 PrimeFlix é uma plataforma de descoberta de filmes onde os usuários podem navegar por filmes em cartaz, visualizar detalhes completos e salvar seus favoritos para assistir mais tarde.
 
+## 🌐 Deploy
+Acesse a aplicação em: https://cine-verse-j.vercel.app
+
 ## ✨ Funcionalidades
 
 - 🎥 Listagem de filmes em cartaz
